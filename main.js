@@ -1,5 +1,8 @@
-const main = document.querySelector("#content")
+console.log(items[0])
 
+
+
+const main = document.querySelector("#content")
 
 const etsyItems = items.map(function(item) {
 	return 
