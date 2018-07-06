@@ -1,0 +1,53 @@
+html {
+	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+#containter { 
+	display: flex;
+	width: 900px;
+	margin: auto; 
+	flex-wrap: wrap;
+}
+
+#containter > header {
+	width: 900px;
+}
+
+#container > aside {
+	width: 200px;
+	height: 700px;
+	background: blue;
+}
+
+#container > main {
+	flex-grow: 1;
+	display: flex;
+	flex-wrap: wrap;
+	width: 700px;
+	justify-content: space-evenly;
+}
+
+a.product {
+	text-decoration: none;
+	color: #333;
+	display: block;
+	width: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+a.product img {
+	width: 200px;
+	height: 200px;
+}
+
+a.product .title {
+	width: 150px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
