@@ -5,16 +5,23 @@ html {
 	box-sizing: inherit;
 }
 
-#containter { 
+#container { 
 	display: flex;
 	width: 900px;
 	margin: auto; 
 	flex-wrap: wrap;
 }
 
-#containter > header {
+#container > header {
 	width: 900px;
+	height: 100px;
+	background: red;
 }
+
+/*BEGIN HERE FOR THE HEADER SECTION*/
+/*#header-1::after {
+	display: table;
+}*/
 
 #container > aside {
 	width: 200px;
