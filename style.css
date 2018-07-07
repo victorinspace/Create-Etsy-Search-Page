@@ -1,3 +1,9 @@
+/*
+################
+               general page styles
+################
+*/
+
 html {
 	box-sizing: border-box;
 	font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
@@ -18,7 +24,7 @@ html {
 
 /*
 ################
-               header 
+               header
 ################
 */
 
@@ -119,23 +125,37 @@ html {
 
 /*
 ################
-               side panel 
+               main section
 ################
 */
 
+#main-section{ /* main section styles */
+	display: flex;
+	justify-content: space-between;
+}
 
+/* 
+---left side 
+*/
 
+#main-section__left { /* left section styles */
+	width: 250px;
+	height: 500px;
+	border: 2px solid red;
+	display: flex;
+	justify-content: space-around;
+}
 
+/* 
+---right side 
+*/
 
-
-
-
-
-
-
-
-
-
+#main-section__right { /* right section styles*/
+	width: 900px;
+	height: 500px;
+	border: 2px solid red;
+	justify-content: space-around;
+}
 
 
 /*
