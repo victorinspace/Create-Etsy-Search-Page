@@ -58,7 +58,7 @@ html {
 	position: relative;
 }
 
-#top__header--right { /* right side of top header */
+#top__header--right { /* right side of top header main styles */
 	display: flex;
 	order: 1;
 	width: 400px;
@@ -66,12 +66,16 @@ html {
 	justify-content: center;
 }
 
+.top__header--right { /* individual links styles */
+	margin: 6px;
+}
+
 
 #sign-in { /* sign in styles */
   height: auto;
   margin-top: 23px;
   margin-right: 18px;
-  display: block;
+  display: inline-block;
   float: left;
   padding: 8px;
   line-height: 16px;
@@ -132,6 +136,7 @@ html {
 #main-section{ /* main section styles */
 	display: flex;
 	justify-content: space-between;
+
 }
 
 /* 
@@ -143,7 +148,7 @@ html {
 	height: 500px;
 	border: 2px solid red;
 	display: flex;
-	justify-content: space-around;
+	align-content: stretch;
 }
 
 /* 
@@ -154,7 +159,9 @@ html {
 	width: 900px;
 	height: 500px;
 	border: 2px solid red;
+	display: flex;
 	justify-content: space-around;
+	align-content: stretch;
 }
 
 
