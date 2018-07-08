@@ -12,6 +12,10 @@ html {
 	box-sizing: inherit;
 }
 
+ul {
+	list-style-type: none;
+}
+
 #container { 
 	display: flex;
 	width: 100%;
@@ -28,7 +32,6 @@ html {
 */
 #top { /* main header styles */
 	width: 100%;
-	height: 300px;
 }
 
 /* 
@@ -104,6 +107,7 @@ html {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+	margin: 10px 0; 
 }
 
 .sub-categories--links { /* link styles */
@@ -114,11 +118,10 @@ html {
 	border: 1px solid #d89353;
 	font-size: 14px;
 	height: 38px;
-  	display: flex;
+	display: flex;
  	padding: 8px 12px;
 	align-items: center;
-	margin-right: 6px;
-	margin: 6px 6px d6px 0;
+	margin: 6px 6px 6px 0;
 }
 
 
@@ -129,11 +132,9 @@ html {
 */
 #main-section{ /* main section styles */
 	width: 100%;
-	height: 1000px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	border: 3px solid blue;
 }
 
 /* 
@@ -142,7 +143,15 @@ html {
 #main-section__left { /* left section styles */
 	width: 250px;
 	height: 100%;
-	border: 2px solid red;
+	border: 1px solid #e1e3e0;
+	border-radius: 3px;
+}
+
+.side-filter a {
+	color: inherit;
+	font-size: 85.71%;
+	text-decoration: none;
+	vertical-align: middle;
 }
 
 /* 
@@ -151,7 +160,6 @@ html {
 #main-section__right { /* right section general styles*/
 	width: 100%;
 	height: 100%;
-	border: 2px solid red;
 	flex-grow: 1;
 	display: flex;
 	flex-wrap: wrap;
@@ -175,7 +183,7 @@ a.product img { /* image styles */
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	width: 100%;
+	width: 100%;h
  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); /* transparent box shadow on hover */
 }
 
