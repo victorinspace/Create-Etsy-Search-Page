@@ -46,7 +46,6 @@ ul {
 
 #top__header--left { /* left side of top header */
 	display: flex;
-	display: inline-block;
 	order: -1;
 	align-items: flex-start;
 	justify-content: center;
@@ -55,7 +54,30 @@ ul {
 #top__header--left #etsy-logo { /* etsy logo styles */
 	width: 80px;
 	height: 40px;
-	position: relative;
+	margin-right: 20px;
+}
+
+#search-bar { /* serach bar general styles */
+	max-width: 450px;
+	display: inline-block;
+}
+
+#search-bar__input { /* search input styles */
+	border-radius: 3px;
+	overflow: hidden;
+	width: 425px;
+	height: 35px;
+}
+
+#search-bar__button { /* search button styles */
+	height: 35px;
+	line-height: 17px;
+	background-color: #F56400;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  color: #fff;
+  padding: 7px 15px 8px;
 }
 
 #top__header--right { /* right side of top header main styles */
@@ -164,13 +186,15 @@ ul {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
+	padding-left: 0px;
+	padding-right: 18px;
 }
 
 a.product { /* dynamic content styles */
 	text-decoration: none;
 	color: #333;
 	display: block;
-	width: 340px;
+	width: 25%;
 	padding: 9px;
 	display: flex;
 	flex-wrap: wrap;
@@ -178,8 +202,8 @@ a.product { /* dynamic content styles */
 }
 
 a.product img { /* image styles */
-	width: 320px;
-	height: 250px;
+	width: 303px;
+	height: 241px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -194,6 +218,7 @@ a.product img:hover { /* add box shadow on hover */
 a.product .title { /* product title styles */
 	width: 150px;
 	white-space: nowrap;
+	font-size: 14px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 }
