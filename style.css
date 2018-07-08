@@ -3,7 +3,6 @@
                general page styles
 ################
 */
-
 html {
 	box-sizing: border-box;
 	font-family: "Graphik Webfont",-apple-system,BlinkMacSystemFont,"Roboto","Droid Sans","Segoe UI","Helvetica",Arial,sans-serif;
@@ -27,7 +26,6 @@ html {
                header
 ################
 */
-
 #top { /* main header styles */
 	width: 100%;
 	height: 300px;
@@ -36,8 +34,7 @@ html {
 /* 
 ---first part of header 
 */
-
-#top__header { /* top header styles */
+#top__header { /* main top header styles */
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -70,7 +67,6 @@ html {
 	margin: 6px;
 }
 
-
 #sign-in { /* sign in styles */
   height: auto;
   margin-top: 23px;
@@ -92,7 +88,6 @@ html {
 /* 
 ---second part of header 
 */
-
 #categories { /* categories styles */
 	display: flex;
 	flex-direction: row;
@@ -112,18 +107,18 @@ html {
 }
 
 .sub-categories--links { /* link styles */
-  background-color: #FFAC62;
-  border-color: rgba(0, 0, 0, 0.15);
-  color: #222;
-  border-radius: 3px;
+	background-color: #FFAC62;
+	border-color: rgba(0, 0, 0, 0.15);
+	color: #222;
+	border-radius: 3px;
 	border: 1px solid #d89353;
 	font-size: 14px;
 	height: 38px;
-  display: flex;
-  padding: 8px 12px;
- 	align-items: center;
- 	margin-right: 6px;
- 	margin: 6px 6px 6px 0;
+  	display: flex;
+ 	padding: 8px 12px;
+	align-items: center;
+	margin-right: 6px;
+	margin: 6px 6px d6px 0;
 }
 
 
@@ -132,36 +127,35 @@ html {
                main section
 ################
 */
-
 #main-section{ /* main section styles */
+	width: 100%;
+	height: 1000px;
 	display: flex;
+	flex-direction: row;
 	justify-content: space-between;
-
+	border: 3px solid blue;
 }
 
 /* 
 ---left side 
 */
-
 #main-section__left { /* left section styles */
 	width: 250px;
-	height: 500px;
+	height: 100%;
 	border: 2px solid red;
-	display: flex;
-	align-content: stretch;
 }
 
 /* 
 ---right side 
 */
-
 #main-section__right { /* right section styles*/
-	width: 900px;
-	height: 500px;
+	width: 100%;
+	height: 100%;
 	border: 2px solid red;
+	flex-grow: 1;
 	display: flex;
-	justify-content: space-around;
-	align-content: stretch;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 
@@ -170,28 +164,20 @@ html {
                dynamic content
 ################
 */
-
-#container > main {
-	flex-grow: 1;
-	display: flex;
-	flex-wrap: wrap;
-	width: 700px;
-	justify-content: space-evenly;
-}
-
 a.product {
 	text-decoration: none;
 	color: #333;
 	display: block;
-	width: 200px;
+	width: 340px;
+	padding: 9px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 }
 
 a.product img {
-	width: 200px;
-	height: 200px;
+	width: 320px;
+	height: 250px;
 }
 
 a.product .title {
