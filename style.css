@@ -148,7 +148,7 @@ html {
 /* 
 ---right side 
 */
-#main-section__right { /* right section styles*/
+#main-section__right { /* right section general styles*/
 	width: 100%;
 	height: 100%;
 	border: 2px solid red;
@@ -158,13 +158,7 @@ html {
 	justify-content: space-evenly;
 }
 
-
-/*
-################
-               dynamic content
-################
-*/
-a.product {
+a.product { /* dynamic content styles */
 	text-decoration: none;
 	color: #333;
 	display: block;
@@ -175,12 +169,21 @@ a.product {
 	justify-content: space-between;
 }
 
-a.product img {
+a.product img { /* image styles */
 	width: 320px;
 	height: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+ 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0), 0 6px 20px 0 rgba(0, 0, 0, 0); /* transparent box shadow on hover */
 }
 
-a.product .title {
+a.product img:hover { /* add box shadow on hover */
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a.product .title { /* product title styles */
 	width: 150px;
 	white-space: nowrap;
 	overflow: hidden;
