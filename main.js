@@ -13,6 +13,11 @@ const etsyItems = items.results.map(function(item) {
 			<img src="${item.Images[0].url_fullxfull}">
 			<span class="title">${item.title}</span>
 			<span class="shop-name">${item.Shop.shop_name}</span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star checked"></span>
+			<span class="fa fa-star"></span>
 			<span class="price">$${item.price}</span>
 		</a>
 	`
